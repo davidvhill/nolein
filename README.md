@@ -5,7 +5,9 @@ Nolein is an example of creating a multi-project with Clojure Tools.
 Use of deps and aliases means any function in any library can be a CLI
 operation provided the function has an arity that accepts a single map argument.
 
-||Example Commands||
+
+| Example Commands |
+| :--------------- |
 |clj -X:help|
 |clj -X:install|
 |clj -X:test|
