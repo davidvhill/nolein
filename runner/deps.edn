@@ -1,0 +1,2 @@
+{:deps
+ {nolein/docker {:local/root "../docker"}}}

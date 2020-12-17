@@ -1,0 +1,23 @@
+{:deps {nolein/installer  {:local/root "./installer"}
+        nolein/runner     {:local/root "./runner"}
+        nolein/docker     {:local/root "./docker"}
+        nolein/httpserver {:local/root "./httpserver"}}
+ 
+ :aliases
+ {:install
+  {:exec-fn nolein.installer/install
+   :exec-args {:name "nolein-installer"
+               :dir "/usr/local/nolein"}}
+
+  :http-start
+  {:exec-fn nolein.httpserver/start
+   :exec-args {}}
+
+  :http-stop
+  {:exec-fn nolein.httpserver/stop
+   :exec-args {}}
+
+  :run
+  {:exec-fn nolein.runner/run
+   :exec-args {:env :dev}}
+  }}
